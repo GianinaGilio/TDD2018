@@ -12,6 +12,16 @@ class Mazo {
   public function obtenerCantidad(){
 	return $this->cantCartas;
 }
+
+
+  public function esVacio(){
+    	if($this->cantCartas != 0){ 
+		return FALSE;
+		}	
+	return TRUE;
+}
+
+
   public function mezclar() {
     return TRUE;
   }
