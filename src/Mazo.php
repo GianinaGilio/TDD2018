@@ -6,8 +6,8 @@ class Mazo {
 
   protected cantCartas;
 
-  public function __construct($cantCartas){
-	$this->cantCartas = $cantCartas;
+  public function __construct($num){
+	$this->cantCartas = $num;
 }
   public function obtenerCantidad(){
 	return $this->cantCartas;
