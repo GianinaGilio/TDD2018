@@ -4,7 +4,7 @@ namespace TDD;
 
 class Mazo {
 
-  protected cantCartas;
+  protected $cantCartas;
 
   public function __construct($num){
 	$this->cantCartas = $num;
