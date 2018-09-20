@@ -10,7 +10,7 @@ class CartaTest extends TestCase {
      * Valida que se puedan crear cartas.
      */
     public function testExiste() {
-        $carta = new Carta;
+        $carta = new Carta(9,"ORO");
         $this->assertTrue(isset($carta));
     }
 
