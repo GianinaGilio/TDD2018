@@ -19,7 +19,7 @@ class CartaTest extends TestCase {
 		$this->assertEquals($carta->verNumero(),5);
 	}
 	
-    public function testPalo(){
+    public function testVerPalo(){
 		$carta = new Carta(9,"ORO");
 		$this->assertEquals($carta->verPalo(),"ORO");
 	}
