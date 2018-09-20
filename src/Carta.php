@@ -13,7 +13,7 @@ class Carta {
 	}
 	
 	public function verPalo(){
-	
+	return $this->palo;
 	}
 
  }
