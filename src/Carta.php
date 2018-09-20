@@ -12,6 +12,10 @@ class Carta {
 	$this->palo = $palo;
 	}
 	
+	public function verNumero(){
+	return $this->numero;
+	}
+	
 	public function verPalo(){
 	return $this->palo;
 	}
