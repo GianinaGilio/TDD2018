@@ -4,7 +4,7 @@ namespace TDD;
 
 use PHPUnit\Framework\TestCase;
 
-class MazoTest extends TestCase {
+class CartaTest extends TestCase {
 
     /**
      * Valida que se puedan crear cartas.
