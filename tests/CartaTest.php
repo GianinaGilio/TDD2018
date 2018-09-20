@@ -14,8 +14,14 @@ class CartaTest extends TestCase {
         $this->assertTrue(isset($carta));
     }
 
+	public function testVerNumero(){
+		$carta = new Carta(5,"COPA");
+		$this->assertEquals($carta->verNumero(),5);
+	}
+	
     public function testPalo(){
 		$carta = new Carta(9,"ORO");
 		$this->assertEquals($carta->verPalo(),"ORO");
 	}
+	
 }
