@@ -21,10 +21,10 @@ class Mazo {
 
 
   public function esVacio(){
-    	if($this->cantCartas != 0){ 
-		return FALSE;
+    	if($this->cantCartas != NULL){ 
+		return TRUE;
 		}	
-	return TRUE;
+	return FALSE;
   }
 
 
