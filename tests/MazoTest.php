@@ -25,9 +25,13 @@ class MazoTest extends TestCase {
         $mazo = new Mazo(2);
         $this->assertTrue($mazo->mezclar());
     }
-
+    
     public function testObtenerCantidad(){
-	$mazo = new Mazo(3);
+	$carta1 = new Carta(9,"oro");
+	$carta2 = new Carta(8,"copa");
+	$carta3 = new Carta(5,"espada");
+	$mazo = new Mazo([$carta1,$carta2,$carta3]);
 	$this->assertEquals($mazo->obtenerCantidad(),3);
 	}
+
 }
