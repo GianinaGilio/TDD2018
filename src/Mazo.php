@@ -15,9 +15,8 @@ class Mazo {
   public function obtenerCantidad(){
 	$i=0;
 	foreach ($this->num as &$valor) {
-    	$i= $i +1;
+    	$this->cantCartas= $this->cantCartas+1;
 	}
-	$this->cantCartas=$i;
 	return $this->cantCartas;
   }
 
