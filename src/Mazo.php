@@ -5,13 +5,21 @@ namespace TDD;
 class Mazo {
 
   protected $cantCartas;
+  protected $num = array();
+  protected $mazo;
 
   public function __construct($num){
-	$this->cantCartas = $num;
-}
+	$this->mazo = $num;
+  }
+
   public function obtenerCantidad(){
+	$i=0;
+	foreach ($this->num as &$valor) {
+    	$i= $i +1;
+	}
+	$this->cantCartas=$i;
 	return $this->cantCartas;
-}
+  }
 
 
   public function esVacio(){
@@ -19,7 +27,7 @@ class Mazo {
 		return FALSE;
 		}	
 	return TRUE;
-}
+  }
 
 
   public function mezclar() {
