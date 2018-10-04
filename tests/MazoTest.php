@@ -22,11 +22,11 @@ class MazoTest extends TestCase {
 	$carta1 = new Carta(9,"oro");
 	$carta2 = new Carta(8,"copa");
 	$carta3 = new Carta(5,"espada");
-	$array= array();
-	$mazo = new Mazo($array);
+	$array1= array();
+	$mazo = new Mazo($array1);
 	$this->assertTrue($mazo->esVacio());
-	$array= array($carta1,$carta2,$carta3);
-	$mazo = new Mazo($array);
+	$array2= array($carta1,$carta2,$carta3);
+	$mazo2 = new Mazo($array2);
 	$this->assertFalse($mazo2->esVacio());
 }
 
