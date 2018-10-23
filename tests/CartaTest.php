@@ -10,18 +10,24 @@ class CartaTest extends TestCase {
      * Valida que se puedan crear cartas.
      */
     public function testExiste() {
-        $carta = new Carta(9,"ORO");
+        $carta = new Carta("9","ORO");
         $this->assertTrue(isset($carta));
     }
 
 	public function testVerNumero(){
-		$carta = new Carta(5,"COPA");
+		$carta = new Carta("5","COPA");
 		$this->assertEquals($carta->verNumero(),5);
 	}
 	
     public function testVerPalo(){
-		$carta = new Carta(9,"ORO");
+		$carta = new Carta("9","ORO");
 		$this->assertEquals($carta->verPalo(),"ORO");
+	}
+
+   public function testTipoCarta(){
+		$carta = new Carta("9", "ORO", "ESPAÑOLA");
+		$carta2 = new Carta("9", "CORAZONES", "Española");
+		$this->assertEquals($carta->verTipo(),"Española");
 	}
 	
 }
