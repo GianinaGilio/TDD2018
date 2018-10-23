@@ -22,9 +22,9 @@ class Mazo {
 
   public function esVacio(){
     	if($this->cantCartas != NULL){ 
-		return TRUE;
+		return FALSE;
 		}	
-	return FALSE;
+	return TRUE;
   }
 
 
