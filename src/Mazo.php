@@ -45,6 +45,7 @@ class Mazo {
   }
 
   public function mezclar() {
+    shuffle($this->mazo);
     return TRUE;
   }
 }
