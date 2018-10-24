@@ -49,4 +49,17 @@ class Mazo {
     return TRUE;
   }
 
+  public function cortar(){
+
+    $contador =0;
+    for ($i=0; $i == $this->obtenerCantidad()/2; $i++) {
+     $aux[$i] = $this->mazo[$this->obtenerCantidad()+$i];
+     $contador++;
+    }
+    
+    for ($i=$contador; $i > $this->obtenerCantidad(); $i++) {
+      $aux[$contador] = $this->mazo[$i];
+     }
+    
+     return TRUE;
 }

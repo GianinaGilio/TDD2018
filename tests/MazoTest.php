@@ -81,5 +81,6 @@ class MazoTest extends TestCase {
 		$mazo = new Mazo($array, "POKER");
 
 		$this->assertTrue($mazo->cortar());
+		$this->assertTrue($mazo->obtenerCarta(), $carta3);
 	}
 }
