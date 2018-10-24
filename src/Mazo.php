@@ -48,4 +48,5 @@ class Mazo {
     shuffle($this->mazo);
     return TRUE;
   }
+
 }
