@@ -7,6 +7,7 @@ class Mazo {
   protected $cantCartas;
   protected $mazo= array();
   protected $tipo;
+  private $aux= array();
 
   public function __construct($num, $tipo){
   $this->mazo = $num;
@@ -50,18 +51,17 @@ class Mazo {
   }
 
   public function cortar(){
-
     $contador=0;
     for ($i=0; $i == $this->obtenerCantidad()/2; $i++) {
-     $aux[$i] = $this->mazo[$this->obtenerCantidad()+$i];
+     $this->aux[$i] = $this->mazo[$this->obtenerCantidad()+$i];
      $contador++;
     }
     
     for ($i=$contador; $i > $this->obtenerCantidad(); $i++) {
-      $aux[$contador] = $this->mazo[$i];
+      $this->aux[$i] = $this->mazo[$i];
      }
     
-     $this->mazo = $aux;
+     $this->mazo = $this->aux;
      return TRUE;
 }
 }
