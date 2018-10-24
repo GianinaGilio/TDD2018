@@ -6,10 +6,12 @@ class Carta {
 
 	protected $numero;
 	protected $palo;
+	protected $tipo;
 
-	public function __construct($numero,$palo){
+	public function __construct($numero,$palo, $tipo){
 	$this->numero = $numero;
 	$this->palo = $palo;
+	$this->tipo = $tipo;
 	}
 	
 	public function verNumero(){
@@ -18,6 +20,10 @@ class Carta {
 	
 	public function verPalo(){
 	return $this->palo;
+	}
+
+	public function verTipo(){
+	return $this->tipo;
 	}
 
  }
