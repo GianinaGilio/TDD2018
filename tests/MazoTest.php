@@ -14,7 +14,7 @@ class MazoTest extends TestCase {
 	$carta2 = new Carta("8","COPA", "ESPAÑOLA");
 	$carta3 = new Carta("5","COPA", "ESPAÑOLA");
         $array= array($carta1,$carta2,$carta3);
-		$mazo = new Mazo($array);
+		$mazo = new Mazo($array, "ESPAÑOLA");
         $this->assertTrue(isset($mazo));
     }
 
@@ -23,10 +23,10 @@ class MazoTest extends TestCase {
 	$carta2 = new Carta("8","COPA", "ESPAÑOLA");
 	$carta3 = new Carta("5","COPA", "ESPAÑOLA");
 	$array1= array();
-	$mazo = new Mazo($array1);
+	$mazo = new Mazo($array1, "ESPAÑOLA");
 	$this->assertTrue($mazo->esVacio());
 	$array2= array($carta1,$carta2,$carta3);
-	$mazo2 = new Mazo($array2);
+	$mazo2 = new Mazo($array2, "ESPAÑOLA");
 	$this->assertFalse($mazo2->esVacio());
 }
 
@@ -35,7 +35,7 @@ class MazoTest extends TestCase {
 	$carta2 = new Carta("8","COPA", "ESPAÑOLA");
 	$carta3 = new Carta("5","COPA", "ESPAÑOLA");
 	$array= array($carta1,$carta2,$carta3);
-	$mazo = new Mazo($array);
+	$mazo = new Mazo($array, "ESPAÑOLA");
 	$this->assertTrue($mazo->mezclar());
     }
 
@@ -44,7 +44,7 @@ class MazoTest extends TestCase {
 	$carta2 = new Carta("8","COPA", "ESPAÑOLA");
 	$carta3 = new Carta("5","COPA", "ESPAÑOLA");
 	$array= array($carta1,$carta2,$carta3);
-	$mazo = new Mazo($array);
+	$mazo = new Mazo($array, "ESPAÑOLA");
 	$this->assertEquals($mazo->obtenerCantidad(),3);
 	}
 
@@ -53,7 +53,7 @@ class MazoTest extends TestCase {
 	$carta2 = new Carta("8","COPA", "ESPAÑOLA");
 	$carta3 = new Carta("5","COPA", "ESPAÑOLA");
 	$array= array($carta1,$carta2,$carta3);
-	$mazo = new Mazo($array);
+	$mazo = new Mazo($array, "ESPAÑOLA");
 
 	$this->assertEquals($mazo->obtenerCarta(),$carta1);
 	}
