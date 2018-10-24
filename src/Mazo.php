@@ -51,7 +51,7 @@ class Mazo {
 
   public function cortar(){
 
-    $contador =0;
+    $contador=0;
     for ($i=0; $i == $this->obtenerCantidad()/2; $i++) {
      $aux[$i] = $this->mazo[$this->obtenerCantidad()+$i];
      $contador++;
@@ -61,5 +61,7 @@ class Mazo {
       $aux[$contador] = $this->mazo[$i];
      }
     
+     $this->mazo = $aux;
      return TRUE;
+}
 }
