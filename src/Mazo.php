@@ -5,17 +5,18 @@ namespace TDD;
 class Mazo {
 
   protected $cantCartas;
-  protected $num = array();
+  protected $num =array();
   protected $mazo;
 
   public function __construct($num){
-	$this->mazo = $num;
+  $this->mazo = $num;
+  foreach ($this->mazo as &$valor) {
+    $this->cantCartas= $this->cantCartas+1;
+}
   }
 
   public function obtenerCantidad(){
-	foreach ($this->mazo as &$valor) {
-    	$this->cantCartas= $this->cantCartas+1;
-	}
+	
 	return $this->cantCartas;
   }
 
