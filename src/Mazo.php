@@ -50,18 +50,4 @@ class Mazo {
     return TRUE;
   }
 
-  public function cortar(){
-    $contador=0;
-    for ($i=0; $i == $this->obtenerCantidad()/2; $i++) {
-     $this->aux[$i] = $this->mazo[$this->obtenerCantidad()+$i];
-     $contador++;
-    }
-    
-    for ($i=$contador; $i > $this->obtenerCantidad(); $i++) {
-      $this->aux[$i] = $this->mazo[$i];
-     }
-    
-     $this->mazo = $this->aux;
-     return TRUE;
-}
 }

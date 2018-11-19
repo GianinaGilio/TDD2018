@@ -72,15 +72,4 @@ class MazoTest extends TestCase {
 		
 	}
 
-	public function testcortar(){
-		$carta1 = new Carta("9","CORAZONES", "POKER");
-		$carta2 = new Carta("8","PICAS", "POKER");
-		$carta3 = new Carta("5","TREBOLES", "POKER");
-		$carta4 = new Carta("Q","PICAS", "POKER");
-		$array= array($carta1,$carta2,$carta3,$carta4);
-		$mazo = new Mazo($array, "POKER");
-
-		$this->assertTrue($mazo->cortar());
-		$this->assertTrue($mazo->obtenerCarta(), $carta3);
-	}
 }
