@@ -2,7 +2,7 @@
 
 namespace TDD;
 
-class Carta {
+class Carta implements CartaInterface {
 
 	protected $numero;
 	protected $palo;
@@ -15,7 +15,7 @@ class Carta {
 	}
 	
 	/*
-	carta->int
+	carta->sting
 	Devuelve el numero de la carta.
 	*/
 	public function verNumero(){
