@@ -2,7 +2,7 @@
 
 namespace TDD;
 
-class Mazo {
+class Mazo implements MazoInterface {
 
   protected $cantCartas;
   protected $mazo= array();
