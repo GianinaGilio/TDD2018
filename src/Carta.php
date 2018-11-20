@@ -30,6 +30,10 @@ class Carta {
 	return $this->palo;
 	}
 
+	/*
+	carta->string
+	Devuelve el tipo de la carta
+	*/
 	public function verTipo(){
 	return $this->tipo;
 	}
