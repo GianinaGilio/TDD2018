@@ -30,7 +30,7 @@ interface MazoInterface {
      *
      * @return Mazo
      */
-    public function agregarCarta(CartaInterface $carta);	
+    public function agregarCarta($carta);	
 	
 	/**
      * Devuelve el mismo mazo, pero con las cartas en otro orden.
